@@ -1,0 +1,16 @@
+.sidebar {
+    background-color: #F2F2F2;
+    /*position: relative;*/
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 450px;
+    /*left: 280px;*/
+
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+
+  }
+  
