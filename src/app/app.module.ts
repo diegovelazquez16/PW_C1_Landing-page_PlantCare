@@ -7,11 +7,13 @@ import { MainComponent } from './main/main.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { RouterModule, Routes } from '@angular/router';  
+import { RouterModule, Routes } from '@angular/router';
+import { VideoPageComponent } from './components/video-page/video-page.component';  
 
 const appRoutes: Routes = [
   { path: '', component: ProductsComponent },  
   { path: 'products/:name', component: ProductDetailComponent },  
+  { path: 'video-page', component: VideoPageComponent },  
   { path: '**', redirectTo: '', pathMatch: 'full' }  
 ];
 
@@ -23,11 +25,12 @@ const appRoutes: Routes = [
     MainComponent,
     ProductsComponent,
     FooterComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    VideoPageComponent 
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)  
+    RouterModule.forRoot(appRoutes) 
   ],
   providers: [],
   bootstrap: [AppComponent]

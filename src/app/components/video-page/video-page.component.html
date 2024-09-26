@@ -1,0 +1,25 @@
+<div class="video-container">
+    <h1>Planta bonita</h1>
+  <img id="PrincipalPlant" src="assets/Imgs/image 13 (1).png" alt="">
+  <div class="video-page-container">
+    <div class="video-container">
+      <video controls>
+        <source src="assets/videos/Cómo cuidar de CUALQUIER planta! 3 sencillos pasos.mp4
+        " type="video/mp4">
+      </video>
+    </div>  
+    <div class="text-content">
+      <h2>Subtema</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quos unde suscipit consectetur molestiae quibusdam eveniet harum est itaque, quae, odio ea quo, amet veniam qui necessitatibus. Consequatur, sunt fuga..</p>
+    </div>
+  </div>
+    <div class="related-products">
+      <div *ngFor="let product of relatedProducts" class="product-item">
+        <img [src]="product.image" alt="{{ product.name }}">
+        <h4>{{ product.name }}</h4>
+        <p>{{ product.price }}</p>
+        <button [routerLink]="['/video-page']">¿Te interesa?</button>
+      </div>
+    </div>
+  </div>
+  
