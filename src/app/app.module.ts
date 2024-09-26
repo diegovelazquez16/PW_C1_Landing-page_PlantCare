@@ -6,6 +6,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainComponent } from './main/main.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { RouterModule, Routes } from '@angular/router';  
+
+const appRoutes: Routes = [
+  { path: '', component: ProductsComponent },  
+  { path: 'products/:name', component: ProductDetailComponent },  
+  { path: '**', redirectTo: '', pathMatch: 'full' }  
+];
 
 @NgModule({
   declarations: [
@@ -14,10 +22,12 @@ import { FooterComponent } from './footer/footer.component';
     SidebarComponent,
     MainComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    ProductDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)  
   ],
   providers: [],
   bootstrap: [AppComponent]

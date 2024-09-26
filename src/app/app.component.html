@@ -1,11 +1,11 @@
 <app-header></app-header>
 <div class="main-container">
-  <div class="left-side">
+  <div class="left-side" *ngIf="isMainPage">
     <app-sidebar></app-sidebar>
   </div>
   <div class="right-side">
-    <app-main></app-main>
+    <app-main *ngIf="isMainPage"></app-main>
   </div>
 </div>
-<app-products></app-products>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
