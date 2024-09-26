@@ -106,6 +106,13 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+    "repo": "https://github.com/diegovelazquez16/PW_C1_Landing-page_PlantCare",
+    "baseHref": "https://diegovelazquez16.github.io/PW_C1_Landing-page_PlantCare/"
+         }
         }
       }
     }
