@@ -7,6 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  [x: string]: any;
   isMainPage: boolean = true;  
 
   constructor(private router: Router, private route: ActivatedRoute) {
